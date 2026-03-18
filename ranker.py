@@ -1,5 +1,5 @@
 
-import fitz  # PyMuPDF
+import fitz  
 import docx
 import nltk
 import re
@@ -13,7 +13,7 @@ from nltk.corpus import stopwords
 
 STOP_WORDS = set(stopwords.words('english'))
 
-# Load the model ONCE (expensive operation — keep it global)
+
 # all-MiniLM-L6-v2 is fast, lightweight, and great for semantic similarity
 MODEL = SentenceTransformer('all-MiniLM-L6-v2')
 
